@@ -1,18 +1,14 @@
-// 3^5の値を次の２つの方法で求めて、結果が等しいことを確認する。
-// ① for文を使って3を5回掛け合わせる方法
-// ② ライブラリ関数pow()を用いる方法
-
 #include <stdio.h>
-#include <math.h>
 
 int main () {
-    // for文を使う
-    int ans1 = 1;
-    for (int i = 0; i < 5; i++)
-        ans1 *= 3;
-    printf("%d\n", ans1);
+    int i, j, k;
+    double ans;
 
-    // ライブラリ関数を使う
-    int ans2 = pow(3, 5);
-    printf("%d\n", ans2);
+    printf("i="); scanf("%d", &i);
+    printf("j="); scanf("%d", &j);
+    printf("k="); scanf("%d", &k);
+
+    ans = (double)(i + j) * k / 20 + j;
+
+    printf("ans=%f\n", ans);
 }
