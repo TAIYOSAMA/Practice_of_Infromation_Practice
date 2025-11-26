@@ -1,4 +1,3 @@
-// コードを書き写し、正しく動作することを確認
 #include <stdio.h>
 
 int main()
