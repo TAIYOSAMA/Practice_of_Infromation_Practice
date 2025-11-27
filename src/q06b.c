@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX_N 10
+#define MAX_N 10 //正方行列の最大サイズを指定
 
 int main () {
     int N;
