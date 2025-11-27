@@ -52,3 +52,11 @@
 ## q07b
 !["q07b"](imgs/q07b.png)
 [q07b.c](src/q07b.c)
+
+## q08a
+!["q08a"](imgs/q08a.png)
+[q08a.c](src/q08a.c)
+
+## q08b
+!["q08b"](imgs/q08b.png)
+[q08b.c](src/q08b.c)
