@@ -12,7 +12,7 @@ int main () {
     putchar('\n');
 
     // 配列をバブルソート
-    for (int i = N - 1; i > 1; i--)
+    for (int i = N - 1; i > 0; i--)
         for (int j = 0; j < i; j++) 
             if (a[j] > a[j + 1]) {
                 temp = a[j];
