@@ -9,13 +9,14 @@ int length(const int X[]) {
     return i;
 }
 
+
+
 // 配列に要素を入力するための関数
 void inputArray (int X[], int n, char *label) {
     printf("%s", label);
 
     int x;
     int i = 0;
-
     while (i < n - 1) {
         scanf("%d", &x);
 
@@ -24,7 +25,6 @@ void inputArray (int X[], int n, char *label) {
 
         X[i++] = x;
     }
-
     X[i] = -1;
 }
 
@@ -38,18 +38,7 @@ void printArray (const int X[]) {
     printf("}\n");
 }
 
-// 昇順ソート済み配列に対して、隣接する重複要素を削除
-void unique (int X[]) {
-    int len = length(X);
-    int j = 0;
 
-    for (int i = 1; i < len; i++) {
-        if (X[j] != X[i]) {
-            X[++j] = X[i];
-        }
-    }
-    X[j + 1] = -1;
-}
 
 // 昇順にソート
 void sort (int X[]) {
@@ -67,11 +56,26 @@ void sort (int X[]) {
     }
 }
 
+// 昇順ソート済み配列に対して、隣接する重複要素を削除
+void unique (int X[]) {
+    int len = length(X);
+    int j = 0;
+
+    for (int i = 1; i < len; i++) {
+        if (X[j] != X[i]) {
+            X[++j] = X[i];
+        }
+    }
+    X[j + 1] = -1;
+}
+
 // 配列を表示用に整形
 void formatArray(int X[]) {
     sort(X);
     unique(X);
 }
+
+
 
 // 共通部分集合を計算
 void calcCommon (int X[], const int A[], const int B[]) {
@@ -104,6 +108,8 @@ void calcUnion (int X[], const int A[], const int B[]) {
 
     formatArray(X);
 }
+
+
 
 int main () {
     // 集合の初期化
