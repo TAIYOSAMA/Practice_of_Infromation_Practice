@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// 複素数を表す構造体を定義
 typedef struct 
 {
     int real;
