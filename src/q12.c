@@ -18,26 +18,26 @@ void printComplex (complex x) {
 
 // x+y
 complex add (complex x, complex y) {
-    complex ans;
-    ans.real = x.real + y.real;
-    ans.imaginary = x.imaginary + y.imaginary;
-    return ans;
+    return (complex){
+        x.real + y.real,
+        x.imaginary + y.imaginary
+    };
 }
 
 // x-y
 complex diff (complex x, complex y) {
-    complex ans;
-    ans.real = x.real - y.real;
-    ans.imaginary = x.imaginary - y.imaginary;
-    return ans;
+    return (complex){
+        x.real - y.real,
+        x.imaginary - y.imaginary
+    };
 }
 
 // x*y
 complex multi (complex x, complex y) {
-    complex ans;
-    ans.real = x.real*y.real - x.imaginary*y.imaginary;
-    ans.imaginary = x.real*y.imaginary + x.imaginary*y.real;
-    return ans;
+    return (complex){
+        x.real*y.real - x.imaginary*y.imaginary,
+        x.real*y.imaginary + x.imaginary*y.real
+    };
 }
 
 int main () {
