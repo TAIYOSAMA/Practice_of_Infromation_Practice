@@ -101,3 +101,7 @@ gcc q01.c -o q01.out -lm
 ## q12
 !["q12"](imgs/q12.png)<br>
 [q12.c](src/q12.c)
+
+## q13
+!["q13"](imgs/q13.png)<br>
+[q13.c](src/q13.c)
